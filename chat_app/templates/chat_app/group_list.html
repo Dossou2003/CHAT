@@ -1,0 +1,15 @@
+
+    <html>
+    <head>
+        <title>Group List</title>
+    </head>
+    <body>
+        <h1>Group List</h1>
+        <ul>
+            {% for group in groups %}
+                <li><a href="{% url 'chat_room' group.name %}">{{ group.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </body>
+    </html>
+  </boltAction
